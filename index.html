@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>CALCULATOR</h1>
+        <div class="page">
+            <input id="form" class="form" class="form" type="text" style="width: 325px; height: 40px; font-size: 20px; border-color: black;border: 5px;" readonly><br>
+            <input onclick="calcdata2()" class="butt" type="button" value="C" onclick="clear()">
+            <input onclick="calcdata1()"  class="butt" type="button" value="AC">
+            <input onclick="calcdata3()" class="butt" type="button" value="/">
+            <input onclick="calcdata4()" class="butt" type="button" value="*"><br>
+            <input onclick="calcdata(7)" class="butt" type="button" value="7" onclick="form.value='7 '">
+            <input onclick="calcdata(8)" class="butt" type="button" value="8">
+            <input onclick="calcdata(9)" class="butt" type="button" value="9">
+            <input  onclick="calcdata5()" class="butt" type="button" value="-"><br>
+            <input onclick="calcdata(4)" class="butt" type="button" value="4">
+            <input onclick="calcdata(5)" class="butt" type="button" value="5">
+            <input onclick="calcdata(6)" class="butt" type="button" value="6">
+            <input onclick="calcdata6()" class="butt" type="button" value="+"><br>
+            <input onclick="calcdata(1)" class="butt" type="button" value="1">
+            <input onclick="calcdata(2)" class="butt" type="button" value="2">
+            <input onclick="calcdata(3)" class="butt" type="button" value="3">
+            <input onclick="calcdata(.)" class="butt" type="button" value="."><br>
+            <input onclick="calcdata7()" class="butt1" type="button" value="=">
+            <input onclick="calcdata(0)" class="butt1" type="button" value="0">
+
+
+        </div>
+    </div>
+<script src="calc.js"></script>
+</body>
+
+</html>
