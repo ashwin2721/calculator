@@ -5,37 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="main">
-        <h1>CALCULATOR</h1>
-        <div class="page">
-            <input id="form" class="form" class="form" type="text" style="width: 325px; height: 40px; font-size: 20px; border-color: black;border: 5px;" readonly><br>
-            <input onclick="calcdata2()" class="butt" type="button" value="C" onclick="clear()">
-            <input onclick="calcdata1()"  class="butt" type="button" value="AC">
-            <input onclick="calcdata3()" class="butt" type="button" value="/">
-            <input onclick="calcdata4()" class="butt" type="button" value="*"><br>
-            <input onclick="calcdata(7)" class="butt" type="button" value="7" onclick="form.value='7 '">
-            <input onclick="calcdata(8)" class="butt" type="button" value="8">
-            <input onclick="calcdata(9)" class="butt" type="button" value="9">
-            <input  onclick="calcdata5()" class="butt" type="button" value="-"><br>
-            <input onclick="calcdata(4)" class="butt" type="button" value="4">
-            <input onclick="calcdata(5)" class="butt" type="button" value="5">
-            <input onclick="calcdata(6)" class="butt" type="button" value="6">
-            <input onclick="calcdata6()" class="butt" type="button" value="+"><br>
-            <input onclick="calcdata(1)" class="butt" type="button" value="1">
-            <input onclick="calcdata(2)" class="butt" type="button" value="2">
-            <input onclick="calcdata(3)" class="butt" type="button" value="3">
-            <input onclick="calcdata(.)" class="butt" type="button" value="."><br>
-            <input onclick="calcdata7()" class="butt1" type="button" value="=">
-            <input onclick="calcdata(0)" class="butt1" type="button" value="0">
-
-
+    <div class="container">
+        <div class="main">
+        
+            <div class="head">
+                <p>CALCULATOR</p>
+            </div>
+            <div class="page">
+                <div class="head1">
+                    <input id="form" class="form" class="form" type="text" style="width: 345px; height: 70px; font-size: 20px; border-color: black;border: 5px; text-align: right;" readonly >
+                </div>
+                
+               <div class="first">
+                <input onclick="calcdata2()" class="butt" type="button" value="C" onclick="clear()"style="background-color: #f66a09; color: black;font-weight: bold; font-size: 20px;">
+                <input onclick="calcdata1()"  class="butt" type="button" value="AC" style="background-color: #f66a09; color: black;font-weight: bold;font-size: 20px;">
+                <input onclick="calcdata3()" class="butt" type="button" value="/" style="background-color: white; color: black;font-weight: bold; font-size: 20px;">
+                <input onclick="calcdata4()" class="butt" type="button" value="*" style="background-color: white; color: black;font-weight: bold; font-size: 20px;">
+               </div>
+               <div class="second">
+                <input onclick="calcdata(7)" class="butt" type="button" value="7"  style="font-size:20px">
+                <input onclick="calcdata(8)" class="butt" type="button" value="8"style="font-size:20px">
+                <input onclick="calcdata(9)" class="butt" type="button" value="9" style="font-size:20px">
+                <input  onclick="calcdata5()" class="butt" type="button" value="-" style="background-color: white; color: black;font-weight: bold; font-size: 20px;">
+               </div>
+               <div class="third">
+                <input onclick="calcdata(4)" class="butt" type="button" value="4"style="font-size:20px">
+                <input onclick="calcdata(5)" class="butt" type="button" value="5"style="font-size:20px">
+                <input onclick="calcdata(6)" class="butt" type="button" value="6"style="font-size:20px">
+                <input onclick="calcdata6()" class="butt" type="button" value="+"style="background-color: white; color: black;font-weight: bold; font-size: 20px;">
+               </div>
+               <div class="last">
+                <input onclick="calcdata(1)" class="butt" type="button" value="1">
+                <input onclick="calcdata(2)" class="butt" type="button" value="2">
+                <input onclick="calcdata(3)" class="butt" type="button" value="3">
+                <input onclick="calcdata(.)" class="butt" type="button" value=".">
+               </div>
+                <div class="final">
+                    
+                <input onclick="calcdata(0)" class="butt1" type="button" value="0">
+                <input onclick="calcdata7()" class="butt1" type="button" value="="style="background-color: #f66a09; color: black;font-weight: bold; font-size: 20px;">
+                </div>
+    
+    
+            </div>
         </div>
     </div>
-<script src="calc.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
